@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>ReSa - Sing in</title>
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body>
+		<div class="box">
+			<form autocomplete="off" method='POST'
+									action='/login'>
+				<h2>Sign in</h2>
+				<div class="inputBox">
+					<input type="text" name="username" required="required" />
+					<span>Userame</span>
+					<i></i>
+				</div>
+				<div class="inputBox">
+					<input type="password" name="password" required="required" />
+					<span>Password</span>
+					<i></i>
+				</div>
+				<div class="links">
+					<p>{{info}}</p>
+					<a href="/signup">Signup</a>
+				</div>
+				<input type="submit" value="Login" />
+			</form>
+		</div>
+	</body>
+</html>
